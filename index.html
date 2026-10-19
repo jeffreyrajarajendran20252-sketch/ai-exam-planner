@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chrono Vault — Discover luxury, sport, smart, and classic watches. Browse curated timepieces and buy from top e-commerce stores.">
+  <title>Chrono Vault | Premium Watch Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">⌚</span>
+        <span class="logo-text">Chrono<span class="gold">Vault</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#collection" class="nav-link">Collection</a></li>
+        <li><a href="#brands" class="nav-link">Brands</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="search-wrapper" id="searchWrapper">
+          <input type="text" class="search-input" id="searchInput" placeholder="Search watches...">
+          <button class="search-btn" id="searchBtn" aria-label="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
+          </button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-particles" id="heroParticles"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle reveal">— Timeless Elegance —</p>
+      <h1 class="hero-title reveal">
+        Discover Your<br>
+        Perfect <span class="gold">Timepiece</span>
+      </h1>
+      <p class="hero-desc reveal">
+        Explore our curated collection of the world's finest watches.<br>
+        Find your dream watch and buy from trusted stores.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#collection" class="btn btn-primary">Explore Collection</a>
+        <a href="#brands" class="btn btn-outline">View Brands</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-number" data-target="500">0</span>+
+          <span class="stat-label">Watches</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="50">0</span>+
+          <span class="stat-label">Brands</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="10">0</span>+
+          <span class="stat-label">Stores</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-watch-visual">
+      <div class="watch-glow"></div>
+      <div class="watch-ring ring-1"></div>
+      <div class="watch-ring ring-2"></div>
+      <div class="watch-ring ring-3"></div>
+      <div class="watch-center-text">⌚</div>
+    </div>
+  </section>
+
+  <!-- Collection Section -->
+  <section class="section collection" id="collection">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-subtitle">Our Curated</p>
+        <h2 class="section-title">Watch <span class="gold">Collection</span></h2>
+        <p class="section-desc">Handpicked timepieces from the world's most iconic brands</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="filter-bar reveal" id="filterBar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="luxury">Luxury</button>
+        <button class="filter-btn" data-filter="sport">Sport</button>
+        <button class="filter-btn" data-filter="smart">Smart</button>
+        <button class="filter-btn" data-filter="classic">Classic</button>
+        <button class="filter-btn" data-filter="dive">Dive</button>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid" id="productGrid">
+        <!-- Populated by JS -->
+      </div>
+
+      <p class="no-results" id="noResults" style="display:none;">No watches found matching your search.</p>
+    </div>
+  </section>
+
+  <!-- Brands Section -->
+  <section class="section brands" id="brands">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-subtitle">Trusted</p>
+        <h2 class="section-title">Partner <span class="gold">Brands</span></h2>
+      </div>
+      <div class="brand-grid reveal">
+        <div class="brand-card">
+          <div class="brand-icon">👑</div>
+          <h3>Rolex</h3>
+          <p>Swiss luxury</p>
+        </div>
+        <div class="brand-card">
+          <div class="brand-icon">🏔️</div>
+          <h3>Omega</h3>
+          <p>Precision craft</p>
+        </div>
+        <div class="brand-card">
+          <div class="brand-icon">🎯</div>
+          <h3>TAG Heuer</h3>
+          <p>Racing heritage</p>
+        </div>
+        <div class="brand-card">
+          <div class="brand-icon">🍎</div>
+          <h3>Apple</h3>
+          <p>Smart innovation</p>
+        </div>
+        <div class="brand-card">
+          <div class="brand-icon">⚡</div>
+          <h3>Casio</h3>
+          <p>Tough reliability</p>
+        </div>
+        <div class="brand-card">
+          <div class="brand-icon">🌊</div>
+          <h3>Seiko</h3>
+          <p>Japanese mastery</p>
+        </div>
+        <div class="brand-card">
+          <div class="brand-icon">💎</div>
+          <h3>Cartier</h3>
+          <p>Elegant luxury</p>
+        </div>
+        <div class="brand-card">
+          <div class="brand-icon">🔥</div>
+          <h3>Fossil</h3>
+          <p>Modern style</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content reveal">
+          <p class="section-subtitle">About Us</p>
+          <h2 class="section-title">Why <span class="gold">ChronoVault</span>?</h2>
+          <p class="about-desc">
+            We curate the finest timepieces from around the world, connecting you with 
+            trusted retailers so you can buy with confidence. Every watch in our collection 
+            is hand-selected for quality, design, and value.
+          </p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="feature-icon">✓</div>
+              <div>
+                <h4>Verified Retailers</h4>
+                <p>Only authorized, trusted e-commerce partners</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon">✓</div>
+              <div>
+                <h4>Best Price Guarantee</h4>
+                <p>We compare prices across platforms for you</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon">✓</div>
+              <div>
+                <h4>Expert Curation</h4>
+                <p>Every watch reviewed by horological experts</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual reveal">
+          <div class="about-card-stack">
+            <div class="about-float-card card-1">🔍 Curate</div>
+            <div class="about-float-card card-2">⭐ Review</div>
+            <div class="about-float-card card-3">🛒 Connect</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section newsletter">
+    <div class="container">
+      <div class="newsletter-box reveal">
+        <h2>Stay in the <span class="gold">Loop</span></h2>
+        <p>Get notified about new arrivals, exclusive deals, and watch insights</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-logo"><span class="logo-icon">⌚</span> Chrono<span class="gold">Vault</span></h3>
+          <p>Your trusted guide to the world's finest timepieces.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#brands">Brands</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#" onclick="filterByCategory('luxury')">Luxury</a></li>
+            <li><a href="#" onclick="filterByCategory('sport')">Sport</a></li>
+            <li><a href="#" onclick="filterByCategory('smart')">Smart</a></li>
+            <li><a href="#" onclick="filterByCategory('dive')">Dive</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram" class="social-link">📷</a>
+            <a href="#" aria-label="Twitter" class="social-link">🐦</a>
+            <a href="#" aria-label="YouTube" class="social-link">▶️</a>
+            <a href="#" aria-label="Pinterest" class="social-link">📌</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ChronoVault. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Product Detail Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="productModal">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+      <div class="modal-body">
+        <div class="modal-image">
+          <img id="modalImage" src="" alt="">
+        </div>
+        <div class="modal-info">
+          <span class="modal-category" id="modalCategory"></span>
+          <h2 class="modal-title" id="modalTitle"></h2>
+          <p class="modal-brand" id="modalBrand"></p>
+          <p class="modal-price" id="modalPrice"></p>
+          <p class="modal-desc" id="modalDesc"></p>
+          <div class="modal-specs" id="modalSpecs"></div>
+          <div class="modal-actions" id="modalActions">
+            <!-- Buy buttons injected by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
